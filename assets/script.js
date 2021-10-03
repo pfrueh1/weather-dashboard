@@ -132,11 +132,13 @@ if (targetEl.matches(".historyBtn")) {
 }
 
 function loadSearches() {
+
     var parsedSearches = JSON.parse( localStorage.getItem('searchedCityArr') );
-     for (let i = 0; i < parsedSearches.length; i++){
-         getWeather(parsedSearches[i]);
-     }
-    console.log('parsedSearches', parsedSearches);
+    if (parsedSearches) {
+        for (let i = 0; i < parsedSearches.length; i++){
+            getWeather(parsedSearches[i]);
+        }
+    }       
     
 }
 
