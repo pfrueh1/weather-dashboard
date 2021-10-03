@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center text-light bg-dark ">Weather Dashboard</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>Search for a City</h3>
+                <div >
+                    <input type="text" class= "form-control" id="citySearchInput">
+                    <button class="btn badge btn-info col-12" id="citySearchBtn">Search</button>
+                </div>
+                <div id="historyContainer" class="border-top border-dark mt-3"></div>
+            </div>
+            <div class="col-lg-9">
+                <div class="col-12" id="todaysWeather"></div>
+                <div class="col-12" id="fiveDay">
+                    <div class="row">
+                        <div class="card col-2">
+                            <h3 class="card-title" id='day1'></h3>
+                            <p>Temp:<span id="day1temp"></span></p>
+                            <p>Wind:<span id="day1wind"></span></p>
+                            <p>Humididty:<span id="day1humidity"></span></p>                      
+                        </div>
+                        <div class="card col-2">
+                            <h3 class="card-title" id="day2"></h3>
+                            <p>Temp:<span id="day2temp"></span></p>
+                            <p>Wind:<span id="day2wind"></span></p>
+                            <p>Humididty:<span id="day2humidity"></span></p>
+                        </div>
+                        <div class="card col-2">
+                            <h3 class="card-title" id="day3"></h3>
+                            <p>Temp:<span id="day3temp"></span></p>
+                            <p>Wind:<span id="day3wind"></span></p>
+                            <p>Humididty:<span id="day3humidity"></span></p>
+                        </div>
+                        <div class="card col-2">
+                            <h3 class="card-title" id="day4"></h3>
+                            <p>Temp:<span id="day4temp"></span></p>
+                            <p>Wind:<span id="day4wind"></span></p>
+                            <p>Humididty:<span id="day4humidity"></span></p>
+                        </div>
+                        <div class="card col-2">
+                            <h3 class="card-title" id="day5"></h3>
+                            <p>Temp:<span id="day5temp"></span></p>
+                            <p>Wind:<span id="day5wind"></span></p>
+                            <p>Humididty:<span id="day5humidity"></span></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
